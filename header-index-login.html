@@ -1,4 +1,4 @@
-<header class="mx-auto">
+<header class="mx-auto header-login">
   <div class="container-fluid">
 
     <div class="top-header">
@@ -35,19 +35,82 @@
             </div>
 
             <div class="lang-wrap pull-right">
-              <div class="lang">
-                <select class="country-select">
-                  <option value="">Россия</option>
-                  <option value="">Россия</option>
-                </select>
-                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <div class="lang dropdown country-select">
+                <button 
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  id="country">
+                  Россия
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu b-radius-2" role="menu" aria-labelledby="country">
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Украина
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Белоруссия
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Молдавия
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Грузия
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Армения
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Литва
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Украина
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Белоруссия
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      Молдавия
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="lang">
-                <select class="lang-select">
-                  <option value="">RU</option>
-                  <option value="">EN</option>
-                </select>
-                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <div class="lang dropdown lang-select">
+                <button 
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  id="lang">
+                  RU
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu b-radius-2" role="menu" aria-labelledby="lang">
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      EN
+                    </a>
+                  </li>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">
+                      UA
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -70,21 +133,68 @@
             </div>
             <div class="search-wrap">
               <div class="input-group">
-                <span class="input-group-addon">
-                  <i class="fa fa-search color-purple" aria-hidden="true"></i>
+                <span class="input-group-addon b-radius-2">
+                  <img src="img/search-header.png" alt="">
                 </span>
                 <input 
                   type="text" 
-                  class="form-control" 
+                  class="form-control b-radius-2" 
                   placeholder="Найдите реагенты, оборудование и другое ">
               </div>
+              <!-- response block  -->
+              <style>
+                .search-response{display: none};
+              </style>
+              <div class="search-response b-radius-2">
+                <p class="response-item">тест полоски для мочи</p>
+                <p class="response-item">тест полоски</p>
+                <p class="response-item">экспресс тесты</p>
+                <p class="response-item">тест полоски с глюкометрам</p>
+                <p class="response-item">диагностические тесты</p> 
+                <p class="response-item response-item-all">
+                  <span class="response-item-text">
+                    Все результаты поиска
+                    <span class="arrow">
+                      <img src="img/arrow-right.png" alt="">
+                    </span>
+                  </span>  
+                </p>  
+              </div>
+              <!-- end response block -->
             </div>
-            <div class="btn-wrap pull-right">
-              <button class="btn btn-yellow">
-                Вход  
-                <span>/</span>
-                Регистрация
-              </button>
+            <div class="btn-wrap pull-right p-relative">
+              <div class="basket">
+                <img src="img/shopping-basket.png" alt="">
+                <div class="num">16</div>
+              </div>
+              <div class="user-foto">
+                <!-- IF ELSE IMG -->
+                <!-- <img src="img/test-user.png" alt=""> -->
+                <img src="img/profile_no_img.png" alt="" class="profile-no-img">
+              </div>
+              <div class="user-name">
+                <span>Григорий</span><br/>
+                <span>Мельниченко</span>
+              </div>
+              <div class="login-setting-btn">
+                <button class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu setting-block b-radius-2" role="menu">
+                  <a class="setting-item" href="#"><p>Профиль</p></a>
+                  <a class="setting-item" href="#"><p>История заказов</p></a>
+                  <a class="setting-item" href="#"><p>Шаблоны заказов</p></a>
+                  <a class="setting-item" href="#"><p>Избранные товары</p></a>
+                  <a class="setting-item" href="#"><p>Быстрый заказ</p></a>
+                  <a class="setting-item" href="#"><p>Отследить заказ</p></a>
+                  <a class="setting-item" href="#">
+                    <p>
+                      <img src="img/logout-arrow.png" alt="">
+                      Выход
+                    </p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
