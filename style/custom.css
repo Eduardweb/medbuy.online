@@ -717,7 +717,7 @@ header{
   height: 100%;
   background-image: url('../img/presentation-img.png');
   background-color: #060f2f;
-  background-size: 100%;
+  background-size: cover;
   overflow: hidden;
   position: relative;
   color: #fefefe;
@@ -750,7 +750,7 @@ header{
   padding: 45px 0 80px; 
 }  
 .presentation-top .brand-logo{
-  width: 165px ;
+  width: 165px;
 }
 .presentation-top h1{
   margin-bottom: 25px;
@@ -771,16 +771,19 @@ header{
   margin-bottom: 10px;
 }
 .presentation-bottom{
-  padding: 50px 0 65px;
+  padding: 50px 0 70px;
 }
 .presentation-bottom .presentation-btn-wrap{
   display: -webkit-flex; /* Safari */
   display: flex;
-  justify-content:  space-around;
+  justify-content: space-around;
   width: 100%;
 }
 .presentation-bottom .btn-blue{
   margin-bottom: 50px;
+}
+.presentation-bottom .btn-blue:hover{
+  background-color: #556ac6;
 }
 .presentation-bottom p{
   font-family: 'Segoe-Semibold';
@@ -797,26 +800,46 @@ header{
 } 
 .presentation-bottom .lang {
   display: inline-block;
+  margin-left: 10px;
 }
-.presentation-bottom .lang select{
+.presentation-bottom .dropdown-toggle{
+  color: #fefefe;
   font-family: 'Segoe-Semibold';
   font-size: 13px;
-  background-color: inherit;
+  background-color: transparent;
   border: 0;
-  color: #fefefe;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-   -moz-appearance: none;
-   -webkit-appearance: none;
-   margin-left: 15px;
+  cursor: pointer;
 }
-.presentation-bottom .lang i{
-  font-size: 12px;
-  position: relative;
-  top: -3px;
+.presentation-bottom .dropdown-toggle i{
+  margin-left: 3px;
+}
+.presentation-bottom .dropdown.show .fa-angle-down:before{
+  content: "\f106";
+}
+.presentation-bottom .dropdown-menu{
+  font-family: 'Segoe-Semibold';
+  font-size: 13px;
+  color: #fefefe;
+  margin: 0;
+  padding: 5px 8px 2px;
+  background-color: #2c2770;
+}
+.presentation-bottom .lang-select .dropdown-menu{
+  width: 50px;
+  min-width: 1px;
+}
+.presentation-bottom .dropdown-menu li{
+  margin-bottom: 10px;
+}
+.presentation-bottom .country-select .dropdown-menu{
+  max-height: 70px;
+  overflow: scroll;
+}
+.presentation-bottom .country-select .dropdown-menu::-webkit-scrollbar {
+  width: 3px;
 }
 
+ 
 /* =========== End Presentation ============ */
 
 /* =========== ABOUT ================== */
