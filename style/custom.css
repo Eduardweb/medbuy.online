@@ -4,7 +4,7 @@
 /* == Header ==*/
 /* == Home ==*/
 /* == Presentation ==*/
-/* == ABOUT ==*/
+/* == REGISTRATION ==*/
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -14,15 +14,21 @@
   font-family: 'Segoe-Light';
   src: url('./fonts/Segoe-UI-Light.ttf') format("truetype");
 }
-
 @font-face {
   font-family: 'Segoe-Regular';
   src: url('./fonts/Segoe-UI-Regular.ttf') format("truetype");
 }
-
 @font-face {
   font-family: 'Segoe-Semibold';
   src: url('./fonts/Segoe-UI-Semibold.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'Open-Sans-Regular';
+  src: url('./fonts/Open-Sans-Regular.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'Open-Sans-Light';
+  src: url('./fonts/Open-Sans-Light.ttf') format("truetype");
 }
 @font-face {
   font-family: "CasperRegular";
@@ -155,7 +161,7 @@ select::-ms-expand {
   font-size: 14px;
 }
 .btn.btn-yellow:hover{
-
+  background-color: #ffc230;
 }
 
 /* =========== END BTN ========== */
@@ -437,7 +443,7 @@ header{
 .bottom-header .bottom-menu{
   display: -webkit-flex; /* Safari */
   display: flex;
-  justify-content:  space-around;
+  justify-content: space-around;
   width: 100%;
   margin-top: 8px;
 }
@@ -838,13 +844,156 @@ header{
 .presentation-bottom .country-select .dropdown-menu::-webkit-scrollbar {
   width: 3px;
 }
-
- 
 /* =========== End Presentation ============ */
 
-/* =========== ABOUT ================== */
-
-/* =========== End ABOUT ============== */
+/* =========== REGISTRATION ================== */
+.registration{
+  padding: 41px 0 122px;
+}
+.registration .registration-nav{
+  font-size: 14px;
+  font-family: 'Segoe-Regular';
+  margin: 0 auto;
+  color: #010101;
+}
+.registration .registration-nav a{
+  border-radius: 0;
+  padding: 0 0 10px;
+  margin: 0 35px;
+}
+.registration .registration-nav a:last-child{
+  margin: 0 70px 0 35px;
+}
+.registration .registration-nav a.active{
+  color: #feb528;
+  border-bottom: 3px solid #feb528;
+}
+.registration .grey-line{
+  width: 100%;
+  height: 1px;
+  background-color: #d7d7d7;
+  margin: 11px 0 15px;
+}
+.registration .r-title{
+  position: relative;
+  background-color: #3b3860;
+  height: 147px;
+}
+.registration .r-title h1{
+  font-family: 'Open-Sans-Regular';
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  text-align: right;
+}
+.registration .r-title-box{
+  margin-right: 100px;
+  display: inline-block;
+}
+.registration-buyer .r-title-box{
+  padding: 66px 0 0px;
+}
+.registration-seller-step1 .r-title-box{
+  padding: 44px 0 0px;
+}
+.registration-seller-step1 .step, 
+.registration-seller-step2 .step{
+  width: 88px;
+  margin: 25px auto 0;
+  position: relative;
+}
+.registration .r-title .squares {
+  position: absolute;
+  top: -89px;
+  left: -15px;
+}
+.registration .registration-form{
+  border: 1px solid #d7d7d7;
+  padding: 32px 35px 40px;
+}
+.registration .registration-buyer-form,
+.registration .registration-seller-step1-form{
+  width: 308px;
+  margin-left: 95px;
+}
+.registration .registration-form .form-title{
+  font-size: 14px;
+  font-family: 'Segoe-Regular';
+  color: #000;
+  margin-bottom: 18px;
+}
+.registration .form-title-description{
+  font-size: 13px;
+  font-family: 'Open-Sans-Light';
+  color: #000;
+  margin-bottom: 32px;
+}
+.registration .form-group{
+  margin-bottom: 15px;
+}
+.registration .form-control{
+  width: 100%;
+  height: 36px;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+}
+.registration .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #5e5e5e;
+  font-size: 14px;
+  font-family: 'Segoe-Light';
+}
+.registration .form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #5e5e5e;
+  font-size: 14px;
+  font-family: 'Segoe-Light';
+}
+.registration .form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #5e5e5e;
+  font-size: 14px;
+  font-family: 'Segoe-Light';
+}
+.registration .form-control:-moz-placeholder { /* Firefox 18- */
+  color: #5e5e5e;
+  font-size: 14px;
+  font-family: 'Segoe-Light';
+}
+.registration select{
+  color: #5e5e5e;
+  font-size: 14px;
+  font-family: 'Segoe-Light';
+}
+.registration select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url('./../img/arrows-select.png') 96% / 5% no-repeat;
+  background-size: 8px;
+}
+.registration  select::-ms-expand {  /* для IE */ 
+    display: none;
+}
+.registration-buyer .form-country{
+  max-width: 178px;
+  margin-top: 30px;
+}
+.registration .btn-yellow{
+  width: 204px;
+  height: 40px;
+  display: block;
+  font-family: 'Segoe-Regular';
+  margin-top: 45px;
+}
+.registration .btn-yellow:hover{
+  background-color: #ffc230;
+}
+.registration-buyer .btn-yellow{
+  margin: 45px auto 0;
+}
+.registration .registration-seller-step1-form .btn-yellow{
+  margin: 45px auto 0;
+  width: 140px;;
+}
+/* =========== End REGISTRATION ============== */
 
 /* ============= CONTACT =============== */
 
@@ -1069,8 +1218,15 @@ footer.footer-catalog .dropdown-menu::-webkit-scrollbar {
 @media screen and (max-width: 320px){
   
 } 
+
+/*  */
 .container,
 .container-fluid{
   min-width: 1240px;
-  
 }
+
+header .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
