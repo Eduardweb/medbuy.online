@@ -150,7 +150,26 @@ select::-ms-expand {
   font-size: 14px;
   color: #39356e;
   background-color: #feb528;
+  border: 1px solid #feb528;
   top: 3px;
+}
+.btn.btn-yellow:hover{
+  background-color: #ffc230;
+  border: 1px solid #ffc230;
+}
+.btn.btn-white {
+  font-family: 'Segoe-Regular';
+  height: 30px;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #feb528;
+  padding: 0;
+  color: #39356e;
+}
+.btn.btn-white:hover{
+  background-color: #ffc230;
+  border: 1px solid #ffc230;
 }
 .btn.btn-blue{
   font-family: 'Segoe-Regular';
@@ -159,9 +178,6 @@ select::-ms-expand {
   background-color: #6379d7;
   color: #fefefe;
   font-size: 14px;
-}
-.btn.btn-yellow:hover{
-  background-color: #ffc230;
 }
 
 /* =========== END BTN ========== */
@@ -893,11 +909,10 @@ header{
 .registration-buyer .r-title-box{
   padding: 66px 0 0px;
 }
-.registration-seller-step1 .r-title-box{
+.registration-seller-step .r-title-box{
   padding: 44px 0 0px;
 }
-.registration-seller-step1 .step, 
-.registration-seller-step2 .step{
+.registration-seller-step .step{
   width: 88px;
   margin: 25px auto 0;
   position: relative;
@@ -909,12 +924,16 @@ header{
 }
 .registration .registration-form{
   border: 1px solid #d7d7d7;
-  padding: 32px 35px 40px;
+  padding: 32px 34px 40px;
 }
 .registration .registration-buyer-form,
 .registration .registration-seller-step1-form{
   width: 308px;
   margin-left: 95px;
+}
+.registration .registration-seller-step2-form{
+  width: 442px;
+  margin-left: 25px;
 }
 .registration .registration-form .form-title{
   font-size: 14px;
@@ -931,9 +950,16 @@ header{
 .registration .form-group{
   margin-bottom: 15px;
 }
+.registration .form-group2 .form-control{
+  width: 178px;
+  display: inline-block;
+}
+.registration .form-group2 .form-control + .form-control{
+  margin-left: 10px;
+}
 .registration .form-control{
   width: 100%;
-  height: 36px;
+  height: 36px!important;
   border: 1px solid #d7d7d7;
   border-radius: 3px;
 }
@@ -972,8 +998,33 @@ header{
 .registration  select::-ms-expand {  /* для IE */ 
     display: none;
 }
+.registration label{
+  font-family: 'Segoe-Regular';
+  font-size: 13px;
+  color: #000;
+  margin: 0 0 10px;
+  display: block;
+}
 .registration-buyer .form-country{
   max-width: 178px;
+  margin-top: 30px;
+}
+.registration-seller-step .company-name{
+  margin-top: 30px;
+}
+.registration-seller-step .company-descriptions select{
+  width: 204px;
+}
+.registration-seller-step .company-descriptions input{
+  width: 153px;
+}
+.registration-seller-step .phone .form-control{
+  width: 221px;
+}
+.registration-seller-step .form-control.form-num{
+  width: 118px;
+}
+.registration-seller-step .top-margin-block{
   margin-top: 30px;
 }
 .registration .btn-yellow{
@@ -992,6 +1043,50 @@ header{
 .registration .registration-seller-step1-form .btn-yellow{
   margin: 45px auto 0;
   width: 140px;;
+}
+.registration .registration-seller-step2-form .btn-box{
+  margin-top: 45px;
+}
+.registration .registration-seller-step2-form button{
+  display: inline-block;
+  margin: 0;
+  height: 40px;
+  width: 170px;
+  position: relative;
+  top: 0;
+}
+.registration .registration-seller-step2-form .btn-yellow{
+  float: right;
+}
+.registration .registration-seller-step2-form .btn-white{
+  text-align: right;
+}
+.registration .registration-seller-step2-form .btn-white span{
+  padding-right: 20px;
+}
+.registration-seller-step2-form .btn-white .btn-white-arrow{
+  width: 12px;
+  position: absolute;
+  left: 16px;
+  top: 15px;
+}
+.registration .form-group.error label{
+  color: #ff8267;
+}
+.registration .form-group.error .form-control{
+  border-color: #ff8267;
+} 
+.registration .form-group.error .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ff8267;
+}
+.registration .form-group.error .form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #ff8267;
+}
+.registration .form-group.error .form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #ff8267;
+}
+.registration .form-group.error .form-control:-moz-placeholder { /* Firefox 18- */
+  color: #ff8267;
 }
 /* =========== End REGISTRATION ============== */
 

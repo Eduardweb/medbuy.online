@@ -63,7 +63,7 @@
 <main>
 <!-- ============================ --> 
 <section class="mx-auto">
-  <div class="registration registration-seller-step1">
+  <div class="registration registration-seller-step">
     <div class="container-fluid">
       <div class="row">
         <div class="registration-nav">
@@ -78,6 +78,8 @@
             <h1>Регистрация продавца</h1>
             <div class="step">
               <img src="/img/registration-step-1.png" alt="">
+              <!-- if else step img -->
+              <!-- <img src="/img/registration-step-2.png" alt=""> -->
             </div>
           </div>
           <div class="squares">
@@ -114,7 +116,13 @@
                   placeholder="E-mail *">
               </div>
 
-              <button type="submit" class="btn btn-yellow">Дальше</button>
+  
+                <button type="submit" class="btn btn-yellow">
+                  <a href="/registration-seller-next.html">
+                    Дальше
+                  </a>
+                </button>
+              
             </form>
           </div>
         </div>
@@ -138,55 +146,6 @@
       w3.includeHTML(); 
     </script>
     
-    <script type="text/javascript"> // Slick slider http://kenwheeler.github.io/slick/
-      $(document).ready(function(){
-        $('.industries-slider').slick({
-          dots: false,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          responsive: [
-        {
-          breakpoint: 1440,
-          settings: {
-            arrows: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: false
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            arrows: false,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: false
-          }
-        },
-        {
-          breakpoint: 859,
-          settings: {
-            arrows: false,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: false
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false
-          }
-        },
-      ]
-    });
-  });
-    </script>
 
-    
   </body>
 </html>
