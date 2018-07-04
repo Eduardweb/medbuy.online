@@ -5,6 +5,7 @@
 /* == Home ==*/
 /* == Presentation ==*/
 /* == REGISTRATION ==*/
+/* == FILTERS ==*/
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -1090,9 +1091,56 @@ header{
 }
 /* =========== End REGISTRATION ============== */
 
-/* ============= CONTACT =============== */
-
-/* ============= END CONTACT =========== */
+/* ============= FILTERS =============== */
+.filters-method{
+  font-family: 'Segoe-Semibold';
+  color: #fff;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.filters-method .filter-wrap{
+  border: 1px solid #e1e1e6;
+  margin: 0 -15px;
+} 
+.filters-method .filter-title{
+  width: 100%;
+  padding: 8px 19px 0px;
+  height: 36px;
+  background-color: #adb3d1;
+}
+.filters-method .filter-box{
+  padding: 12px 19px 0px;
+  background-color: #98a0c6;
+  display: flex; 
+  width: 100%;
+  flex-wrap: wrap;
+}
+.filters-method-one .filter-item{
+  width: 25%;
+}
+.filters-method-one .btn-group {
+  width: 100%;
+  position: initial;
+}
+.filters-method-one .btn-group .fa{
+  font-size: 11px;
+  font-weight: 100;
+  margin-left: 10px;
+  color: #fff;
+  position: relative;
+  top: -2px;
+}
+.filters-method .dropdown-toggle{
+  font-family: 'Segoe-Semibold';
+  color: #fff;
+  font-size: 14px;
+  background-color: inherit;
+  border: 0;
+}
+.filters-method-one .btn-group.show .fa-chevron-down:before{
+  content: "\f077";
+}
+/* ============= END FILTERS =========== */
 
 /* ============= Footer =============== */
 footer{
