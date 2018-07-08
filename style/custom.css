@@ -6,6 +6,7 @@
 /* == Presentation ==*/
 /* == REGISTRATION ==*/
 /* == FILTERS ==*/
+/* == CATALOG CONTROL == */
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -46,6 +47,7 @@
 body,html{
   font-family: 'Segoe-Regular';
   color: #000;
+  background-color: #fff;
 }
 p{
   margin: 0;
@@ -109,7 +111,9 @@ h3{}
 h4{}
 h5{}
 h6{}
-
+.bg-default{
+  background-color: #f0f0f5;
+}
 .color-white{
   color: #fff;
 }
@@ -125,7 +129,7 @@ h6{}
 section{
   width: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
   margin: 0 auto;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1358,7 +1362,62 @@ header{
 .side-filters-two input:checked + .img-checked {
   display: block;
 }
+.used-filters {
+  display: inline-block;
+  width: 100%;
+  max-width: 730px;
+  margin-bottom: 16px;
+}
+.used-filters .used-filters-title{
+  display: inline-block;
+  color: #959595;
+  font-family: 'Segoe-Regular';
+  font-size: 12px;
+  margin-right: 22px;
+}
+.used-filters .used-filters-item{
+  display: inline-block;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid #acacac;
+  color: #000;
+  font-family: 'Segoe-Regular';
+  font-size: 12px;
+  padding: 0 24px 1px 9px;
+  margin-right: 8px;
+}
+.used-filters .used-filters-item img{
+  position: absolute;
+  width: 7px;
+  top: 7px;
+  right: 7px;
+}
+.used-filters-count{
+  display: inline-block;
+  float: right;
+  color: #959595;
+  font-family: 'Segoe-Regular';
+  font-size: 12px;
+}
+.used-filters-count span{
+  color: #707070;
+  margin-left: 15px;
+}
 /* ============= END FILTERS =========== */
+/* ============= CATALOG CONTROL ======= */
+.medbuy-table-wrap{
+  width: 1020px;
+  position: relative;
+  min-height: 100px;
+  margin-left: 15px
+}
+.medbuy-table-wrap.catalog-control{
+
+}
+.medbuy-table-wrap .medbuy-table-table{
+  background-color: #fff;
+}
+/* ========== END CATALOG CONTROL ======= */
 
 /* ============= Footer =============== */
 footer{
@@ -1583,7 +1642,7 @@ footer.footer-catalog .dropdown-menu::-webkit-scrollbar {
 /*  */
 .container,
 .container-fluid{
-  min-width: 1240px;
+  min-width: 1292px;
 }
 
 header .container-fluid {

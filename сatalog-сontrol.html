@@ -56,7 +56,7 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     
   </head>
-  <body>
+  <body class="bg-default">
   
 <div w3-include-HTML="./header-catalog.html"></div>
 <main>
@@ -67,15 +67,67 @@
 </section> 
 
 <section>
-  <div w3-include-HTML="./side-filters-one.html"></div>  
-  <br />   
-  <div w3-include-HTML="./side-filters-two.html"></div> 
+  <div class="container">
+    <div class="row">
+      <div>
+        <div w3-include-HTML="./side-filters-one.html"></div> 
+        <br>
+        <div w3-include-HTML="./side-filters-two.html"></div>   
+      </div>
+      <div>
+        <div class="medbuy-table-wrap catalog-control">
+          <div class="used-filters">
+            <div class="used-filters-title">
+              Использованные  фильтры:
+            </div>
+            <div class="used-filters-item">
+              Мокрота
+              <img src="img/close-filter-icon.png" alt=""> 
+            </div>
+            <div class="used-filters-item">
+              Инфекции 
+              <img src="img/close-filter-icon.png" alt=""> 
+            </div>
+          </div>
+          <div class="used-filters-count">
+            <p>
+              Найдено 250 единиц для:
+              <span>регион Киев</span>
+            </p>
+          </div> 
+          <div class="medbuy-table-table  catalog-control-table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
 </section>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <!-- ============================ -->      
 </main> 
