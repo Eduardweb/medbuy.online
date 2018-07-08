@@ -62,9 +62,12 @@ a:hover{
   text-decoration: none;
   color: inherit;
 }
-:active, :hover, :focus {
+:active, :hover, :focus,
+a:focus, a:hover  {
   outline: 0;
   outline-offset: 0;
+  color: inherit;
+  text-decoration: none;
 }
 button:active, button:focus {
   outline: none;
@@ -1216,6 +1219,69 @@ header{
   position: absolute;
   left: 0;
   top: 5px;
+}
+/* Slider */
+.side-filters-one .panel:first-child > .panel-heading{
+  padding: 10px 20px 0px;
+}
+.side-filters-one .panel:last-child > .panel-heading{
+  padding: 0px 20px 10px;
+}
+.side-filters-one .panel-group{
+  width: 255px;
+  display: inline-block;
+}
+.side-filters-one .panel-group h3{
+  background-color: #bdbadf;
+  color: #fefefe;
+  font-family: 'Segoe-Semibold';
+  font-size: 14px;
+  padding: 10px 0px 10px 20px;
+}
+.side-filters-one .panel-heading{
+  color: #fefefe;
+  background-color: #ada9d7;
+  padding: 0 20px;
+}
+.side-filters-one .panel-heading h4{
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #bdbadf;
+}
+.side-filters-one .panel-title{
+  position: relative;
+}
+.side-filters-one .panel-title .fa{
+  position: absolute;
+  right: 0;
+  font-size: 9px;
+  top: 14px;
+}
+.side-filters-one .panel-title .collapsed .fa-chevron-down:before{
+  content: "\f077";
+}
+.side-filters-one .panel-body{
+  border: 1px solid #e1e1e1;
+  margin-top: -1px;
+  z-index: 2;
+  position: relative;
+}
+.side-filters-one .panel-body p{
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 9px 10px 9px 20px; 
+}
+.side-filters-one .panel-body .item-body:last-child p{
+  border-bottom: 0px;
+}
+.side-filters-one .panel:last-child .panel-heading h4{
+  border-bottom: 0;
+}
+.side-filters-one .panel-body p:hover{
+  background-color: #e5e3fb;
 }
 /* ============= END FILTERS =========== */
 
