@@ -1429,6 +1429,16 @@ header{
   border-bottom: 1px solid #ebebec;
   padding: 17px 10px 17px 28px;
 }
+.medbuy-table-wrap .medbuy-table-table td {
+  padding: 17px 10px 5px 28px;
+  height: 56px;
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #000;
+}
+.medbuy-table-wrap .medbuy-table-table td.num{
+  font-family: 'Segoe-Light';
+} 
 .medbuy-table-wrap .medbuy-table-table thead th {
   font-family: 'Segoe-Semibold';
   font-size: 13px;
@@ -1445,14 +1455,22 @@ header{
 .medbuy-table-wrap .medbuy-table-table thead .sortable{
   color: #39356e;
 }
-.medbuy-table-wrap .medbuy-table-table thead
+.medbuy-table-wrap .medbuy-table-table thead .sortable.active{
+  border-bottom: 1px solid #feb528;
+  padding-bottom: 3px;
+}
 .medbuy-table-wrap .medbuy-table-table .next-line{
   display: block;
   font-size: 10px;
   font-family: 'Segoe-Light';
   margin-top: 2px;
 }
+.medbuy-table-table .p-name{
+  border-bottom: 1px solid #39356e;
+  padding-bottom: 3px;
+}
 .medbuy-table-table .total{
+  font-family: 'Segoe-Light';
   display: inline-block;
   width: 43px;
   height: 26px;
@@ -1472,6 +1490,26 @@ header{
   height: 30px;
   padding: 0;
   font-family: 'Segoe-Regular';
+  position: relative;
+  margin-top: -8px;
+}
+/* disabled */
+.medbuy-table-table tr.disabled .p-name,
+.medbuy-table-wrap .medbuy-table-table tr.disabled td {
+  color: #959595;
+  border: 0;
+  cursor: default;
+}
+.medbuy-table-table tr.disabled .minus, 
+.medbuy-table-table tr.disabled .plus{
+  cursor: default;
+}
+.medbuy-table-table tr.disabled .btn-yellow,
+.medbuy-table-table tr.disabled .btn-yellow:hover{
+  cursor: default;
+  background-color: #d7d7d7;
+  color: #fff;
+  border-color: #d7d7d7;
 }
 /* ========== END CATALOG CONTROL ======= */
 
