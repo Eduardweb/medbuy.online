@@ -1391,6 +1391,7 @@ header{
   width: 7px;
   top: 7px;
   right: 7px;
+  cursor: pointer;
 }
 .used-filters-count{
   display: inline-block;
@@ -1412,10 +1413,65 @@ header{
   margin-left: 15px
 }
 .medbuy-table-wrap.catalog-control{
-
+  font-size: 13px;
+  font-family: 'Segoe-Light';
+  color: #000;
 }
 .medbuy-table-wrap .medbuy-table-table{
   background-color: #fff;
+  border: 1px solid #e1e1e6;
+}
+.medbuy-table-wrap .medbuy-table-table thead{
+  background-color: #fbfbfc;
+}
+.medbuy-table-wrap .medbuy-table-table thead th,
+.medbuy-table-wrap .medbuy-table-table td {
+  border-bottom: 1px solid #ebebec;
+  padding: 17px 10px 17px 28px;
+}
+.medbuy-table-wrap .medbuy-table-table thead th {
+  font-family: 'Segoe-Semibold';
+  font-size: 13px;
+  color: #000;
+  vertical-align: text-top;
+  position: relative;
+}
+.medbuy-table-wrap .medbuy-table-table thead .sortable-img{
+  display: inline-block;
+  width: 14px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.medbuy-table-wrap .medbuy-table-table thead .sortable{
+  color: #39356e;
+}
+.medbuy-table-wrap .medbuy-table-table thead
+.medbuy-table-wrap .medbuy-table-table .next-line{
+  display: block;
+  font-size: 10px;
+  font-family: 'Segoe-Light';
+  margin-top: 2px;
+}
+.medbuy-table-table .total{
+  display: inline-block;
+  width: 43px;
+  height: 26px;
+  border: 1px solid #e0e0e0;
+  border-left: 0;
+  border-right: 0;
+}
+.medbuy-table-table .minus,
+.medbuy-table-table .plus{
+  width: 18px;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  height: 26px;
+}
+.medbuy-table-table .btn-yellow{
+  width: 100px;
+  height: 30px;
+  padding: 0;
+  font-family: 'Segoe-Regular';
 }
 /* ========== END CATALOG CONTROL ======= */
 
