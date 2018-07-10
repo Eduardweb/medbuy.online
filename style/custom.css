@@ -1103,7 +1103,7 @@ header{
   font-family: 'Segoe-Semibold';
   color: #fff;
   font-size: 14px;
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 .filters-method .filter-wrap{
   border: 1px solid #e1e1e6;
@@ -1226,6 +1226,9 @@ header{
   top: 5px;
 }
 /* Slider */
+.side-filters{
+  margin-top: 20px;
+}  
 .side-filters-one .panel:first-child > .panel-heading{
   padding: 10px 20px 0px;
 }
@@ -1410,7 +1413,47 @@ header{
   width: 1020px;
   position: relative;
   min-height: 100px;
-  margin-left: 15px
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.medbuy-table-wrap .show-more{
+  position: relative;
+  margin: 70px auto 42px;
+  text-align: center;
+  color: #39356e;
+  font-family: 'Segoe-Regular';
+  font-size: 16px;
+}
+.medbuy-table-wrap .show-more-text{
+  border-bottom: 1px dotted;
+  padding-bottom: 4px;
+}
+.medbuy-table-wrap .show-more img{
+  width: 15px;
+  margin-left: 10px;
+}
+.medbuy-table-wrap .pagination-catalog{
+  position: relative;
+  margin: 0 auto 35px;
+}
+.medbuy-table-wrap .pagination-catalog .pagination{
+  margin: 0;
+}
+.medbuy-table-wrap .pagination-catalog .page-link{
+  border-color: #98a0c6;
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #39356e;
+  padding: 4px 10px;
+}
+.medbuy-table-wrap .pagination-catalog .page-item.active .page-link{
+  background-color: #39356e;
+  color: #fff;
+}
+.medbuy-table-wrap .pagination-catalog .page-link img{
+  width: 7px;
+  position: relative;
+  margin-top: -3px;
 }
 .medbuy-table-wrap.catalog-control{
   font-size: 13px;
@@ -1477,6 +1520,7 @@ header{
   border: 1px solid #e0e0e0;
   border-left: 0;
   border-right: 0;
+  vertical-align: bottom;
 }
 .medbuy-table-table .minus,
 .medbuy-table-table .plus{
