@@ -312,6 +312,10 @@ header{
   width: 100%;
   height: 40px;
 }
+.manufacturers-search .search-wrap .input-group{
+  width: 493px;
+  height: 40px;
+}
 .search-header-wrap .search-wrap .search-response{
   width: 100%;
   padding: 7px 0  10px;
@@ -359,33 +363,39 @@ header{
 .search-header-wrap .btn.btn-yellow{
   width: 187px;
 }
-.search-header .input-group-addon {
+.search-header .input-group-addon,
+.manufacturers-search .input-group-addon {
   background-color: #fff;
   border-color: #807da9;
 }
-.search-header .input-group .form-control:not(:first-child){
+.search-header .input-group .form-control:not(:first-child),
+.manufacturers-search .input-group .form-control:not(:first-child){
   font-family: 'Segoe-Regular';
   border-left: 0px;
   border-color: #807da9;
   font-size: 14px;
   color: #000;
 }
-.search-header input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.search-header input::-webkit-input-placeholder,
+.manufacturers-search input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 14px;
   color: #919191;
   font-family: 'Segoe-Regular';
 }
-.search-header input::-moz-placeholder { /* Firefox 19+ */
+.search-header input::-moz-placeholder,
+.manufacturers-search input::-moz-placeholder  { /* Firefox 19+ */
   font-size: 14px;
   color: #919191;
   font-family: 'Segoe-Regular';
 }
-.search-header input:-ms-input-placeholder { /* IE 10+ */
+.search-header input:-ms-input-placeholder,
+.manufacturers-search input:-ms-input-placeholder { /* IE 10+ */
   font-size: 14px;
   color: #919191;
   font-family: 'Segoe-Regular';
 }
-.search-header input:-moz-placeholder { /* Firefox 18- */
+.search-header input:-moz-placeholder,
+.manufacturers-search input:-moz-placeholder  { /* Firefox 18- */
   font-size: 14px;
   color: #919191;
   font-family: 'Segoe-Regular';
@@ -1131,15 +1141,24 @@ header{
 .filters-method-two .filter-box{
   height: 50px;
 }
-.filters-method-one .filter-item{
-  width: 22%;
-}
 .filters-method-two .filter-item{
   width: 15%;
 }
-.filters-method-one .filter-item:nth-child(3),
-.filters-method-one .filter-item:nth-child(7){
+/* reagents-box */
+.reagents-box .filters-method-one .filter-item{
+  width: 22%;
+}
+.reagents-box .filters-method-one .filter-item:nth-child(3),
+.reagents-box .filters-method-one .filter-item:nth-child(7){
   width: 34%;
+}
+/* .control-box */
+.control-box .filters-method-one .filter-item{
+  width: 22%;
+}
+.control-box .filters-method-one .filter-item:nth-child(3),
+.control-box .filters-method-one .filter-item:nth-child(6){
+  width: 56%;
 }
 .filters-method-one .btn-group {
   width: 100%;
@@ -1224,6 +1243,19 @@ header{
   position: absolute;
   left: 0;
   top: 5px;
+}
+.manufacturers-search{
+  margin-bottom: 10px;
+}
+.manufacturers-search .search-wrap{
+  display: inline-block;
+}
+.manufacturers-search .btn.btn-yellow{
+  font-family: 'Segoe-Regular';
+  width: 102px;
+  height: 34px;
+  margin-left: 25px;
+  top: -4px;
 }
 /* Slider */
 .side-filters{
@@ -1311,7 +1343,8 @@ header{
 .side-filters-two .btn-group.show .fa-chevron-down:before {
   content: "\f077";
 }
-.side-filters-two .dropdown-menu{
+.side-filters-two .dropdown-menu,
+.side-filters-one .consumables-menu{
   width: 100%;
   border-radius: 2px;
   margin-top: -1px;
@@ -1319,17 +1352,23 @@ header{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 15px 0;
+  background-color: #fff;
+  margin-bottom: 0;
+  list-style: none;
 }
 .side-filters-two .btn-group.show .dropdown-toggle{
   border: 1px solid #e1e1e1;
 }
-.side-filters-two .form-check{
+.side-filters-two .form-check,
+.side-filters-one .form-check{
   margin: 0;
 }
-.side-filters-two .form-group{
+.side-filters-two .form-group,
+.side-filters-one .form-group{
   margin: 0;
 }
-.side-filters-two .form-check-input{
+.side-filters-two .form-check-input,
+.side-filters-one .form-check-input{
   z-index: 2;
   left: 18px;
   top: 13px;
@@ -1337,15 +1376,18 @@ header{
   opacity: 0;
   cursor: pointer;
 }
-.side-filters-two .form-check-label{
+.side-filters-two .form-check-label,
+.side-filters-one .form-check-label{
   width: 100%;
   font-family: 'Segoe-Regular';
   font-size: 14px;
   color: #000;
-  padding: 10px 45px;
+  padding: 8px 45px;
   cursor: default;
 }
-.side-filters-two .form-check-label::before {
+
+.side-filters-two .form-check-label::before,
+.side-filters-one .form-check-label::before {
   content: '';
   width: 14px;
   height: 14px;
@@ -1353,16 +1395,18 @@ header{
   border: 1px solid #ada9d7;
   position: absolute;
   left: 18px;
-  top: 13px;
+  top: 12px;
 }
-.side-filters-two .img-checked {
+.side-filters-two .img-checked,
+.side-filters-one .img-checked  {
   width: 14px;
   position: absolute;
   left: 19px;
   top: 12px;
   display: none;
 }
-.side-filters-two input:checked + .img-checked {
+.side-filters-two input:checked + .img-checked,
+.side-filters-one input:checked + .img-checked{
   display: block;
 }
 .used-filters {
@@ -1407,6 +1451,53 @@ header{
   color: #707070;
   margin-left: 15px;
 }
+/* reagents input filters */
+.reagents-input-filters{
+  width: 100%;
+  height: 36px;
+  border: 1px solid #e1e1e6;
+  background-color: #b3b3b3;
+  padding: 6px 20px 0px;
+  margin-bottom: 20px;
+}
+.reagents-input-filters .filter-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+.reagents-input-filters .filter-item .form-check-label {
+  font-family: 'Segoe-Regular';
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+.reagents-input-filters .filter-item .form-check-label::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: block;
+  border: 1px solid #d7d7d7;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.reagents-input-filters .form-check-input {
+  margin: 0;
+  top: 5px;
+  opacity: 0;
+  display: none;
+}
+.reagents-input-filters .filter-item .img-checked {
+  width: 13px;
+  position: absolute;
+  left: 1px;
+  top: 4px;
+  z-index: 2;
+  display: none;
+}
+.reagents-input-filters .filter-item input:checked + .img-checked{
+  display: block;
+}
 /* ============= END FILTERS =========== */
 /* ============= CATALOG CONTROL ======= */
 .medbuy-table-wrap{
@@ -1415,6 +1506,9 @@ header{
   min-height: 100px;
   margin-left: 15px;
   margin-top: 20px;
+}
+.medbuy-table-wrap.table-manufacturers{
+  margin-left: 50px;
 }
 .medbuy-table-wrap .show-more{
   position: relative;
@@ -1463,6 +1557,7 @@ header{
 .medbuy-table-wrap .medbuy-table-table{
   background-color: #fff;
   border: 1px solid #e1e1e6;
+  margin-bottom: 124px;
 }
 .medbuy-table-wrap .medbuy-table-table thead{
   background-color: #fbfbfc;
@@ -1536,6 +1631,15 @@ header{
   font-family: 'Segoe-Regular';
   position: relative;
   margin-top: -8px;
+}
+.table-manufacturers .medbuy-table-table .btn-yellow{
+  width: 136px; 
+}
+.table-manufacturers .medbuy-table-table .btn-yellow .fa{
+  font-size: 15px;
+  top: 7px;
+  right: 17px;
+  position: absolute;
 }
 /* disabled */
 .medbuy-table-table tr.disabled .p-name,
