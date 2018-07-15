@@ -138,12 +138,21 @@ select::-ms-expand {
 /* ========== End Global ======= */
 
 /* ========== Slider global ==== */
+.default-slider-title{
+  font-family: 'Segoe-Semibold';
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  margin: 100px 0 40px;
+}
 .default-slider{
-  margin: 0 10px;
+  padding: 0 15px;
+}
+.default-slider .slide-box{
+  padding: 0 10px;
 }
 .default-slider .slide-wrap{
   border: 1px solid #d7d7d7;
-
 }
 .default-slider .slide-wrap .slide-img{
   width: 100%;
@@ -199,6 +208,78 @@ select::-ms-expand {
 .default-slider .slide-content .btn-white img{
   width: 18px;
   margin: 0 auto;
+}
+.default-slider .slick-dots{
+  bottom: -60px;
+  z-index: 2;
+  margin-left: -15px;
+}
+.default-slider .slick-dots li button{
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #39356e;
+  border-radius: 50%;
+}
+.default-slider .slick-dots li button:before{
+  line-height: 0;
+  content: '';
+  font-size: 0;
+  opacity: 1;
+  position: absolute;
+  border: 0;
+  border-radius: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: #39356e;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+}
+.default-slider .slick-dots li.slick-active button:before{
+  width: 6px;
+  height: 6px;
+  border: 1px solid #39356e;
+}
+.default-slider .slick-prev{
+  left: -40px;
+}
+.default-slider .slick-next{
+  right: -40px;
+}
+.default-slider .slick-prev, 
+.default-slider .slick-next{
+  border: 1px solid #39356e;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #39356e;
+}
+.default-slider .slick-prev:before, 
+.default-slider .slick-next:before{
+  font-family: "FontAwesome";
+  font-size: 20px;
+  opacity: 1;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  line-height: 0;
+}
+.default-slider .slick-prev:before{
+  content: "\f104";
+  top: 14px;
+  right: 11px;
+} 
+.default-slider .slick-next:before{
+  content: "\f105";
+  top: 14px;
+  left: 11px;
+}
+.bestsellers-slider .slide-wrap .slide-img{
+  height: 190px;
+}
+.bestsellers-slider .slide-wrap img{
+
 }
 /* ==== End Slider global ========*/
 
@@ -788,7 +869,7 @@ header{
 
 /* ============= Home ================== */
 .medbuy-home{
-  padding: 33px 0 380px;
+  padding: 33px 0 135px;
 }
 .medbuy-home .list-group-item{
   font-size: 14px;
