@@ -1797,10 +1797,27 @@ select::-ms-expand {
 /* ========== END CATALOG CONTROL ======= */
 
 /* ========== Card product ============= */
+.card-product-box{
+  margin: 0 0 120px 50px;
+}
+.card-product-box .bread{
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #39356e;
+  padding: 16px 3px;
+}
+.card-product-box .bread span:last-child{
+  color: #000;
+}
+.card-product-box .fa{
+  position: relative;
+  top: 1px;
+  font-size: 18px;
+  margin: 0 10px;
+}
 .card-product{
   width: 100%;
   background-color: #fff;
-  margin: 0 0 120px 50px;
   border: 1px solid #e1e1e6;
   padding: 35px 0 0 0;
 }
@@ -1940,7 +1957,113 @@ select::-ms-expand {
 .card-content-box .card-action .add img{
   margin-left: 1px;
 }
-
+.card-product .nav-tabs{
+  padding: 30px 35px 0;
+}
+.card-product .nav-tabs .nav-item{
+  margin: 0;
+}
+.card-product .nav-tabs .nav-link{
+  font-family: 'Segoe-Regular';
+  font-size: 18px;
+  color: #000;
+  padding: 0 0 12px 0;
+  margin: 0 125px 0 0;
+  border: 0;
+  border-bottom: 3px solid #fff;
+}
+.card-product .nav-tabs .nav-link.active {
+  border: 0;
+  border-bottom: 3px solid #feb528;
+}
+.card-product .nav-tabs .nav-link:focus, 
+.card-product .nav-tabs .nav-link:hover {
+  border: 0;
+  border-bottom: 3px solid #feb528;
+}
+.card-product .container{
+  padding: 33px 35px 65px;
+}
+.card-product .container .container-wrap{
+  max-width: 700px;
+}
+.card-product .container h6{
+  font-family: 'Segoe-Semibold';
+  font-size: 14px;
+  color: #000;
+}
+.card-product .container h4{
+  margin: 30px 0 0;
+  text-align: left;
+  font-family: 'Segoe-Semibold';
+  font-size: 16px;
+  color: #000;
+}
+.card-product .container .default-text{
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #000;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.card-product .container ul{
+  color: #ada9d7;
+  padding-left: 20px;
+  margin: 22px 0 0;
+}
+.card-product .container ul li{
+  margin-bottom: 10px;
+}
+.card-product .container ul span{
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #000;
+}
+.card-product .container .feature{
+  display: inline-block;
+  width: 300px;
+}
+.card-product .container .feature p{
+  margin-bottom: 20px;
+}
+.card-product .container .feature-title{
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #474747;
+}
+.card-product .container .feature-text{
+  font-family: 'Segoe-Semibold';
+  font-size: 14px;
+  color: #000;
+  width: 350px;
+}
+.card-product .container .feature p:last-child {
+  margin: 0;
+}
+.card-product .container .feature-text + .feature-title{
+  margin-top: 50px;
+}
+.card-product .container .feature p{
+  position: relative;
+}
+.card-product .container .feature span{
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  padding-right: 10px;
+}
+.card-product .container .feature i{
+  width: 93%;
+  border-bottom: 2px dotted;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 16px;
+  color: #c7c7c7;
+  margin: -2px 10px;
+}
 /* ========== END Card product ========= */
 
 /* ============= Footer =============== */
