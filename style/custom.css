@@ -8,6 +8,7 @@
 /* == FILTERS ==*/
 /* == CATALOG CONTROL == */
 /* == Card product == */
+/* == Personal account == */
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -24,6 +25,10 @@
 @font-face {
   font-family: 'Segoe-Semibold';
   src: url('./fonts/Segoe-UI-Semibold.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'Segoe-Italic';
+  src: url('./fonts/Segoe-UI-Italic.ttf') format("truetype");
 }
 @font-face {
   font-family: 'Open-Sans-Regular';
@@ -2136,6 +2141,94 @@ select::-ms-expand {
 }
 /* ========== END Card product ========= */
 
+/* ============= Personal account ======== */
+.personal-account{
+  background-color: #f0f0f5;
+  border-top: 26px solid #2b294f;
+}
+
+.container-account{
+
+}
+.personal-account-wrap{
+  display: inline-block;
+  width: 1260px;
+  margin-left: -1000px;
+  min-height: 100vh;
+  background-color: #2b294f;
+}
+.personal-account-nav{
+  display: inline-block;
+  width: 260px;
+  float: right;
+  min-height: 100%;
+  background-color: #2b294f;
+}
+.personal-account-nav .personal-info{
+  padding: 50px 0 30px 35px;
+}
+.personal-account-nav .personal-logo{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  vertical-align: bottom;
+}
+.personal-account-nav .personal-name{
+  width: 150px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.personal-account-nav .personal-hello{
+  display: block;
+  font-family: 'Segoe-Italic';
+}
+.personal-account-nav .personal-title{
+  font-family: 'Segoe-Semibold';
+}
+.personal-account-nav .list-group{
+
+}
+.personal-account-nav .list-group-item{
+  font-family: 'Segoe-Regular';
+  font-size: 14px;
+  color: #fff;
+  height: 28px;
+  background-color: transparent;
+  padding-left: 35px;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+.personal-account-nav .list-group-item.active{
+  background-color: #feb528;
+  color: #2b294f;
+}
+.personal-main-wrap{
+  font-family: 'Segoe-Regular';
+  padding: 40px 0 0 50px;
+  color: #221f4c;
+}
+.personal-main-wrap h1{
+  font-size: 18px;
+  line-height: 28px;
+}
+.personal-main-wrap p{
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.personal-main{
+  display: inline-block;
+  width: 1050px;
+  background-color: #fff;
+  
+}
+/* ======= End Personal account ======= */
+
 /* ============= Footer =============== */
 footer{
   border-top: 1px solid #ada9d7;
@@ -2361,7 +2454,9 @@ footer.footer-catalog .dropdown-menu::-webkit-scrollbar {
 .container-fluid{
   min-width: 1292px;
 }
-
+.container-account{
+  min-width: 1362px;
+}
 header .container-fluid {
   padding-right: 0;
   padding-left: 0;
